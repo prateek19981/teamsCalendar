@@ -1,38 +1,95 @@
-.App {
+.App
+{
   text-align: center;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h5{
+  font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 0.4em;
+  font-size: 1em;
+  text-transform: capitalize;
+  line-height: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-contain
+{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: start;
+}
+.App h2{
+  font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1.2em;
+  font-size: 2em;
+  text-transform: capitalize;
+  line-height: 100px;
+}
+
+.form-contain button
+{
+  padding:5px 20px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin:2%;
+ 
+  
+}
+.form-contain h1{
+  font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 2em;
+  text-transform: capitalize;
+  line-height: 100px;
+}
+.form-contain button:hover
+{
+  background-color: lightcyan
+
+}
+
+.form-contain input
+{
+  padding: 10px;
+  text-align: center;
+  margin:8px;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 20%;
+  font-family: monospace;
+  background-color: transparent;
+  font-weight: 900;
+  color: black;
+} 
+
+.form-contain input::placeholder
+{
+  color: black;
+}
+
+.form-contain input:focus
+{
+  outline: none;
+  border-bottom: 2px solid lightblue;
+  color: black;
+}
+
+
+.react-datepicker
+{
+  margin-left: 230%;
+
+  
+}
+
+.header
+{
+  width: 100vw;
+  height: 20%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
